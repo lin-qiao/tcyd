@@ -1,0 +1,216 @@
+@keyframes tipMove {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.layer_shadow {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2000;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.layer_shadow_tip {
+  z-index: 2001;
+}
+.layer_box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 6.08rem;
+  margin-left: -3.04rem;
+  animation: tipMove .3s;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 1px;
+  border-radius: 0.1rem;
+  transform: translateY(-50%);
+}
+.layer_box .icon-close1 {
+  position: absolute;
+  right: 0.2rem;
+  line-height: 1em;
+  top: 0.2rem;
+  color: #888;
+  font-size: 0.5rem;
+}
+.layer_img {
+  display: block;
+  height: 2.3rem;
+}
+.layer_big_img {
+  width: 100%;
+  display: block;
+}
+.layer_info_img {
+  display: block;
+  height: 2.07rem;
+}
+.layer_tit {
+  border-top-left-radius: 0.1rem;
+  border-top-right-radius: 0.1rem;
+  width: 100%;
+  height: 0.78rem;
+  position: relative;
+  line-height: 0.78rem;
+  border-bottom: 1px solid #e4e4e4;
+  background: #f3f3f3;
+  padding: 0 0.3rem;
+  font-size: 0.28rem;
+  color: #333;
+}
+.layer_tit.no_border {
+  border: none;
+}
+.layer_con {
+  width: 100%;
+  font-size: .28rem;
+  color: #333;
+  line-height: 1.8;
+  text-align: center;
+  padding: 0.2rem .32rem;
+  min-height: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.invioce_lay_con {
+  padding: 0.5rem .32rem;
+}
+.layer_btn {
+  display: box;
+  display: -moz-box;
+  display: -webkit-box;
+  width: 4.72rem;
+  height: .7rem;
+  line-height: .7rem;
+  margin-bottom: 0.52rem;
+  font-size: 0.3rem;
+}
+.invioce_lay_btn .close_btn {
+  width: 5rem;
+  background: #ff4d48;
+  border-radius: 0!important;
+  color: #fff;
+}
+.inquiry_btn {
+  display: flex;
+  width: 100%;
+  height: 0.83rem;
+  line-height: .82rem;
+  margin-bottom: 0;
+  border-top: 1px solid #e4e4e4;
+  color: #888;
+}
+.layer_btn .close_btn,
+.layer_btn .confirm_btn {
+  display: block;
+  -moz-box-flex: 1;
+  box-flex: 1;
+  -webkit-box-flex: 1;
+  flex: 1;
+  position: relative;
+  text-align: center;
+}
+.layer_btn .close_btn {
+  border-right: 1px solid #D0D0D0;
+  border-bottom-left-radius: 0.1rem;
+}
+.layer_btn .confirm_btn {
+  border-bottom-right-radius: 0.1rem;
+  color: #ff4d48;
+}
+.layer_btn .sure_btn {
+  display: block;
+  color: #333;
+  text-align: center;
+  width: 100%;
+}
+.layer_btn .sure_btn.sure_main_btn {
+  color: #ff4d48;
+}
+.one_btn {
+  display: block;
+  font-size: .32rem;
+  width: 100%;
+  text-align: center;
+  border-radius: 0.04rem;
+  background: #ff4d48;
+  color: #fff;
+}
+.dialogCont {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border: none;
+  background-color: #333;
+  color: #fff;
+  width: 4.02rem;
+  padding: 0.23rem;
+  border-radius: 0.09rem;
+  line-height: 0.4rem;
+  margin-left: -2.01rem;
+  margin-top: -0.46rem;
+  animation: show .2s;
+  -webkit-animation: show .2s;
+  font-size: 0.24rem;
+  text-align: center;
+  animation: tipMove .3s ;
+}
+.layer_common_con {
+  padding: 0.3rem;
+  font-size: 0.28rem;
+  color: #333;
+  line-height: 1.8;
+  text-align: center;
+}
+.expectBox {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border: none;
+  background-color: #333;
+  color: #fff;
+  width: 4.88rem;
+  height: 5.4rem;
+  margin-left: -2.44rem;
+  margin-top: -2.7rem;
+  animation: show .2s;
+  -webkit-animation: show .2s;
+  font-size: 0.24rem;
+  text-align: center;
+  animation: tipMove .3s ;
+}
+.expectBox img {
+  width: 100%;
+  height: 100%;
+}
+/*加载样式*/
+.alert_loading {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  width: 2rem;
+  height: 2rem;
+  margin-top: -1rem;
+  margin-left: -1rem;
+  z-index: 2000;
+  background: rgba(0, 0, 0, 0.5) url("../images/alert_loading.gif") no-repeat center 30%;
+  text-align: center;
+  border-radius: 0.3rem;
+  background-size: 0.6rem;
+  color: #fff;
+}
+.alert_loading span {
+  display: block;
+  margin-top: 1.2rem;
+}

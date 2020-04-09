@@ -1,0 +1,127 @@
+@import (reference) "~src/style/all.less";
+/*S 用户信息*/ 
+.bg_blue{
+    background: #12adff !important;
+}
+.border_b{
+    .border-b(#eee);
+} 
+.user_approve_state{
+    .flex;
+    .flex_center;
+    .justify_between;
+    font-size:0.24rem;
+    color:#666;
+    p{
+        height: 0.3rem;
+        .flex;
+        .flex_center;
+        span{
+            line-height: 0.28rem;
+        }
+    }
+    img{
+        width:0.28rem;
+        height:0.28rem;
+        display:inline-block;
+        vertical-align: middle;
+        margin-right:0.1rem;
+    }
+}
+.user_msg.user_msg_order{
+    padding-bottom: 0.3rem;
+    .border_b;
+    margin-bottom:0;
+}
+.user_msg{
+    padding:0.34rem 0.3rem 0.34rem 1.36rem;
+    position:relative;
+    z-index:1;
+    .user_name{
+        margin-bottom:0.1rem;
+        font-size:0.28rem;
+        color:#333;
+        em{
+            display:inline-flex;
+            vertical-align: middle;
+            .flex_center;
+            .justify_center;
+            width:0.56rem;
+            height:0.26rem;
+            background: @color;
+            border-radius:0.04rem;
+            color:#fff;
+            font-size:0.18rem;
+            i{
+               margin-right: 0.04rem;
+               font-size:0.14rem;
+            }
+        }
+        //行业
+        .user_industry{
+            display: inline-block;
+            vertical-align: middle;
+            height: 0.3rem;
+            padding: 0 0.1rem;
+            border-radius:0.02rem;
+            .border(#409ffe);
+            line-height: 0.28rem;
+            font-size: 0.2rem;
+            color: #3f9efd;
+        }
+    }
+    
+    .user_add_mess{
+        line-height: 0.4rem;
+        span{
+            margin-right: 0.2rem;
+        }
+    }
+    .user_attention{
+        position: absolute;
+        right: 0.3rem;
+        top: 50%;
+        margin-top: -0.36rem;
+        width: 1.2rem;
+        height: 0.5rem;
+        .border(@color);
+        .border-radius(0.02rem);
+        line-height: 0.48rem;
+        text-align: center;
+        font-size: 0.26rem;
+        color: @color;
+        &.user_attention_ed{
+            border-color: @border_color;
+            color: #999;
+        }
+    }
+    .user_avatar{
+        position:absolute;
+        left:0.3rem;
+        top:50%;
+        margin-top:-0.46rem;
+        width:0.9rem;
+        height:0.9rem;
+        .skill_avatar{
+            width:100%;
+            height:100%;
+            border-radius:0.2rem;
+        }
+        .user_avatar_img{
+            width:100%;
+            height:100%;
+            border-radius:50%;
+        }
+        .user_grade_icon{
+            background: url(~src/images/crown.png) no-repeat;
+            background-size: cover;
+            width:0.4rem;
+            height:0.36rem;
+            position:absolute;
+            left:-0.1rem;
+            top:-0.1rem;
+        }
+    }
+}
+/*E 用户信息*/
+

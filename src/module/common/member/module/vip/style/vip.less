@@ -1,0 +1,399 @@
+@import (reference) "~src/style/base.less";
+.bg_drakRed{
+    background:#af2511;
+}
+.c_dull_yellow{
+    color:#ffab52;
+}
+.c_yellowish{
+    color:#ffe27f;
+}
+.c_drakRed{
+    color:#dd2726;
+}
+.block{
+    display:block;
+}
+.c_brown{
+    color:#8d6854;
+}
+/*S 付费开通-VIP*/
+/*S vip用户信息*/
+.vip_head_box{
+    background: #af3a24;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height:0.8rem;
+}
+.vip_head{
+    display: flex;
+    align-items: center;
+    img{
+        width:0.6rem;
+        height:0.6rem;
+        border-radius:50%;
+    }
+    b{
+        display:block;
+        .f26;
+        .c_fff;
+    }
+    em{
+        display: inline-block;
+        line-height: 0.28rem;
+        padding:0 0.15rem;
+        background: #e1e1e1;
+        font-size: 0.2rem;
+        color: #999;
+        border-radius:0.2rem;
+        &.active{
+            background-color: #ffcc52;
+            color: #af3a24 ;
+        }
+    }
+    span{
+        color:#e6a5a1;
+    }
+}
+/*E vip用户信息*/ 
+/*S vip特权*/
+.vip_privilege{
+    width:100%;
+    background: url(../images/bg_vip.jpg) no-repeat;
+    background-size: cover;
+    min-height:9.72rem;
+    h3{
+        font-size:0.64rem;
+        color: #f7ecd1;
+        text-align: center;
+        padding-top:0.32rem;
+        margin-bottom:0.34rem;
+    }
+    .vip_privilege_label{
+        text-align: center;
+        color:#ebcfab;
+        font-size:0.24rem;
+        letter-spacing: 0.1rem;
+        span{
+            display: inline-block;
+            width:0.24rem;
+            height:0.02rem;
+            background:#ebcfab;
+            vertical-align: middle;
+            margin:0 0.1rem;
+        }
+    }
+}
+.vip_privilege_out{
+    background: #fee2bc;
+    width:6.9rem;
+    margin:0.3rem auto;
+    padding:0.14rem;
+    border-radius:0.1rem;
+    .vip_privilege_in{
+        border:1px dashed #e7c490;
+        border-radius:0.1rem;
+        padding:0.32rem 0.4rem;
+        color:#85573e;
+    }
+    .vip_privilege_msg{
+        display: flex;
+        align-items: center;
+        margin-top:0.24rem;
+        img{
+            width:0.58rem;
+            height: 0.58rem;
+            margin-right:0.16rem;
+        }
+        strong{
+            display: block;
+            margin-bottom:0.08rem;
+        }
+    }
+}
+/*E vip特权*/
+/*S vip卡*/
+.vip_freebie_tit{
+    display: flex;
+    width:6.9rem;
+    margin:0 auto;
+    justify-content: space-between;
+    li{
+        width:2.24rem;
+        height:0.9rem;
+        border-top-left-radius: 0.1rem;
+        border-top-right-radius: 0.1rem;
+        text-align: center;
+        font-size:0.32rem;
+        color:#ffebc9;
+        line-height:0.9rem;
+        .gradient(#e8553e,#d03e29);
+    }
+    li.on{
+        .gradient(#fbf8f3,#f8eee1);
+        color:#c02728;
+    }
+}
+.vip_freebie_list{
+    width:6.9rem;
+    margin:0 auto;
+    padding-bottom:0.5rem;
+    background: #fff;
+    .vip_freebie_msg{
+        display: flex;
+        flex-wrap: wrap;
+        width:6.6rem;
+        margin:0 auto;
+    }
+    .vip_freebie_good{
+        width:2.94rem;
+        border:0.04rem solid #fbf3e9;
+        margin: 0.3rem 0.16rem 0;
+        position:relative;
+        .vip_freebie_img{
+            width:2.86rem;
+            height:2.86rem;
+            display:block;
+        }
+    }
+    .vip_leftIcon{
+        position:absolute;
+        top:0;
+        left:0;
+        width:0.8rem;
+        height:0.72rem;
+        z-index:1;
+    }
+    .vip_btn{
+        box-shadow: none;
+        margin-top:-0.4rem;
+        .gradient_v(#fe5f3a,#ef2b2e);
+    }
+    .vip_freebie_price{
+        background: #f9eee0;
+        text-align: center;
+        span{
+            color:#72503d;
+            margin:0.18rem 0;
+        }
+    }
+}
+.vip_operation{
+    display: flex;
+    justify-content: space-between;
+    margin: 0.38rem 1.06rem;
+    .btn_page{
+        width: 2.12rem;
+        height: 0.7rem;
+        margin: auto;
+        text-align: center;
+        line-height: 0.7rem;
+        border-radius: 0.4rem;
+        background-color: #edc175;
+        box-shadow: 0 0.07rem 0 rgba(210,154,56,1);
+        font-size: 0.36rem;
+        color: #ad2611;
+    }
+}
+/*E vip卡*/
+/*S 底部活动图*/
+.vip_get_free{
+    display:block;
+    width:7.12rem;
+    height:1.62rem;
+    margin:0.2rem auto 0.5rem;
+    img{
+        width:100%;
+        height:100%;
+    }
+}
+/*E 底部活动图*/
+/*S 弹窗*/
+.add_referrer{
+    padding:0.7rem 0 0.4rem;
+    text-align: center;
+    .layer_img{
+        width:2.4rem;
+        height:2.4rem;
+        margin:0.4rem auto;
+    }
+    a{
+        display:block;
+        width:3.66rem;
+        height:0.9rem;
+        font-size:0.32rem;
+        color:#ffffff;
+        line-height:0.32rem;
+        background: #dd2726;
+        border-radius:0.1rem;
+        line-height: 0.9rem;
+    }
+}
+/*E 弹窗*/
+/*E 付费开通-VIP*/
+
+
+/*S 免费开通分享页面*/
+.vip_invite_bag{
+    width:6.9rem;
+    background: #fff;
+    border-radius:0.1rem;
+    margin:0.3rem auto;
+    text-align: center;
+    padding:0.6rem 0;
+    p{
+        width:5.84rem;
+        line-height:0.4rem;
+        text-align: left;
+        margin:0.1rem 0.34rem 0.1rem 0.74rem;
+    }
+    input{
+        border:1px solid #dd2726;
+        width:5.4rem;
+        height: 0.8rem;
+        display:block;
+        margin:0 auto;
+        border-radius:0.1rem;
+        padding-left:0.3rem;
+    }
+    a{
+        display: block;
+        width:3.3rem;
+        height:0.9rem;
+        border-radius:0.5rem;
+        font-size:0.32rem;
+        color:#fff;
+        text-align:center;
+        line-height: 0.9rem;
+        background: @color;
+        margin: 0.38rem auto 0;
+    }
+}
+/*S 红包*/
+.vip_redPack_box{
+    background: url(../images/pack.png) no-repeat;
+    width:5.28rem;
+    height:2.44rem;
+    background-size:cover;
+    margin:0.4rem auto;
+    .flex;
+    color:#fff;
+    align-items: center;
+    em{
+        border:1px solid #fdedb6;
+        color:#fdedb6;
+        font-size:0.26rem;
+        padding:0.1rem 0.3rem;
+        border-radius: 0.1rem;
+    }
+}
+/*E 红包*/
+/*S更多按钮*/
+.vip_more_service{
+    width:4.3rem;
+    height:0.9rem;
+    border-radius:0.5rem;
+    border:1px solid #dd2726;
+    color:#dd2726;
+    display:block;
+    margin:0.46rem auto 0;
+    .f32;
+    text-align: center;
+    line-height:0.9rem;
+}
+/*E更多按钮*/
+/*E 免费开通分享页面*/
+
+
+/*S  免费开通-VIP */
+.vip_invite_box{
+    width:6.9rem;
+    background: #fff;
+    border-radius:0.1rem;
+    margin:0.3rem auto;
+    text-align: center;
+    padding:0.6rem 0;
+    h2{
+        font-size:0.32rem;
+        color:#333;
+    }
+    .vip_invite_wx{
+        position: relative;
+        width:6.32rem;
+        height: 3.14rem;
+        border:2px solid #e5ccab;
+        border-radius:0.2rem;
+        padding:0.1rem 0.16rem ;
+        margin:0.4rem auto;
+        .vip_privilege_msg{
+            display: flex;
+            align-items: center;
+            color:#8d6854;
+            height:0.98rem;
+            border-bottom:1px dashed #e7c490;
+            img{
+                width:0.58rem;
+                height: 0.58rem;
+                margin-right:0.16rem;
+            }
+            b{
+                margin-bottom:0.08rem;
+            }
+        }
+        .vip_privilege_msg:last-child{
+            border-bottom:0;
+        }
+        .invite_wrap{
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            .inner{
+                height: 2.96rem;
+                margin: -1px 0;
+            }
+        }
+        .swiper-container{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .invite_btn{
+        display:inline-block;
+        width:5.8rem;
+        height:0.8rem;
+        .gradient_v(#f13030,#fe5b3a);
+        line-height: 0.8rem;
+        padding:0;
+        margin:0.5rem 0 0.36rem;
+    }
+    
+}
+/*S 规则*/
+.vip_invite_rule{
+    width:6.9rem;
+    margin:0.3rem auto 0.8rem;
+    border-radius:0.1rem;
+    background: #b53b28;
+    font-size:0.26rem;
+    color:#ffffff;
+    line-height:0.44rem;
+    padding:0.34rem 0.44rem 0.5rem 0.26rem;
+    h2{
+        text-align: center;
+        font-size:0.36rem;
+        color:#fbf1e1;
+    }
+    p{
+        margin-top:0.26rem;
+    }
+    i{
+        color:#b53b28;
+        border-radius:50%;
+        padding:0.04rem 0.14rem;
+        background: #fbf1e1;
+        margin-right:0.16rem;
+    }
+}
+/*E 规则*/
+/*E  免费开通-VIP */

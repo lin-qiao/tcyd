@@ -1,0 +1,96 @@
+@import (reference) "~src/style/all.less";
+textarea{
+    resize: none;
+}
+.from_item{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    font-size: .28rem;
+    height: 0.88rem;
+    background: #fff;
+    &.textarea{
+        flex-wrap: wrap;
+        height: auto;
+    }
+    .from_item_textarea{
+        width: 100%;
+        textarea{
+            width: 100%;
+            padding: 0;
+            color: inherit;
+            line-height: 1.5;
+            font-family: inherit;
+            font-size: .26rem;
+        }
+        .num{
+            color: #888;
+            text-align: right;
+            line-height: .55rem;
+            font-size: .24rem;
+        }
+    }
+}
+.form_check_out{
+    display:flex;
+    flex-wrap:wrap;
+    .form_btn{
+        @height:60;
+        display:block;
+        width:2rem;
+        height:0.6rem;
+        border-radius:0.3rem;
+        margin:0 .15rem;
+        border:1px solid @border_color;
+        position:relative;
+        white-space: nowrap;
+        overflow: hidden;
+        &:nth-child(n+4){
+            margin-top: .3rem;
+        }
+        &.isBadge{
+            .border-radius(0.04rem);
+        }
+        &.column2{
+            width: 3.15rem;
+            &:nth-child(n+3){
+                margin-top: .3rem;
+            }
+        }
+        &>i{
+            position:absolute;
+            right: -.04rem;
+            top: -.04rem;
+            color:@color;
+            font-size: .5rem;
+        }
+        &.checked{
+            .border(@color);
+            border-width: 0.02rem;
+            span{
+                color:@color;
+                *{
+                    color: @color !important;
+                }
+            }
+        }
+        span,.input{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            font-size:0.26rem;
+            color:#666;
+            text-align: center;
+        }
+        .input{
+            .placeholder(#999);
+        }
+        span img{
+            width:0.5rem;
+            height:0.5rem;
+        }
+    }
+
+}

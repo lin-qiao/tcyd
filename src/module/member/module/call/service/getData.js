@@ -1,0 +1,1 @@
+import {fetchP} from 'src/config/fetch'

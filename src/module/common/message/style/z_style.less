@@ -1,0 +1,290 @@
+@import (reference) '~src/style/base.less';
+
+/* S 交易提醒 */
+.z_tradeItem{
+    width: 100%;
+    height: 2rem;
+    border-radius: 15px;
+    position: relative;
+    margin-bottom: 0.2rem;
+    .z_itemTitle{
+        padding: 0.3rem 0.3rem 0 0.3rem;
+        display: flex;
+        justify-content:space-between;
+        align-items: flex-end;
+    }
+    .z_itemName{
+        padding: 0.2rem 0.3rem 0 0.3rem;
+    }
+    .z_itemFrom{
+        padding: 0.2rem 0.3rem 0 0.3rem;
+    }
+    .z_itemImg{
+        position: absolute;
+        bottom: 0.3rem;
+        right: 0.3rem;
+        width: 0.94rem;
+        height: 0.94rem;
+        overflow: hidden;
+        img{
+            width: 0.94rem;
+            height: 0.94rem;
+        }
+    }
+}
+/* E 交易提醒 */
+/* S 精选活动 */
+.z_container{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height: 100%;
+    padding:1.2rem 0.3rem 0;
+    .overflow_scroll;
+}
+.z_activityItem{
+    width: 100%;
+    height: 4.25rem;
+    margin-bottom: 0.3rem;
+    position: relative;
+    .box_shadow(4px 4px 24px rgba(237, 237, 237, 0.75));
+    background: #fff;
+    .z_activityImg{
+        width: 100%;
+        height: 2.73rem;
+        overflow: hidden;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .z_activityTitle{
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+        padding-top: 0.3rem;
+    }
+    .z_activityDes{
+        padding: 0.2rem 0.2rem 0 0.2rem;
+    }
+    .z_activityTag{
+        position: absolute;
+        right: 0.33rem;
+        bottom: -0.03rem;
+        width: 0.76rem;
+        height: 0.4rem;
+        background: @color;
+        color: #fff;
+        text-align: center;
+        line-height: 0.4rem;
+        border-top-left-radius: 2px;
+        border-top-right-radius: 2px;
+    }
+}
+/* E 精选活动 */
+/* S 物流信息 */
+.z_logisticsItem{
+    width: 100%;
+    height: 2.4rem;
+    position: relative;
+    margin-bottom: 0.2rem;
+    border-radius: 15px;
+    .z_logisticsTitle{
+        padding: 0.3rem 0.3rem 0 0.3rem;
+        display: flex;
+        justify-content:space-between;
+        align-items: flex-end;
+    }
+    .z_logisticsContent{
+        padding: 0.2rem 0.3rem;
+        display: flex;
+        align-items: center;
+        .z_logisticsImg{
+            width: 1.18rem;
+            height: 1.18rem;
+            text-align: center;
+            line-height: 1.18rem;
+            margin-right: 0.2rem;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .z_logisticsDes{
+            flex: 1;
+        }
+    }
+}
+/* E 物流信息 */
+/* S 消息中心 */
+.z_newsBtn{
+	width: 3.25rem;
+	height: 0.54rem;
+	border-radius: 0.3rem;
+	border: 1px solid #fe5a4e;
+	margin: 0 auto;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	overflow: hidden;
+	.z_messageBtn{
+		width: 50%;
+		height: 100%;
+		background: #fff;
+		color: #fe5a4e;
+		text-align: center;
+		line-height: 0.5rem;
+		float: left;
+	}
+	.z_notificationBtn{
+		width: 50%;
+		height: 100%;
+		background: #fff;
+		color: #fe5a4e;
+		text-align: center;
+		line-height: 0.5rem;
+		float: right;
+	}
+	.z_active{
+		color: #fff;
+		background: #fe5a4e;
+	}
+}
+.z_container_bg{
+    width: 100%;
+    height: 3.16rem;
+    .gradient_v(#fd6a55,#ff4a48);
+}
+.z_container_btn{
+    margin: 0 0.3rem;
+    height: 4.2rem;
+    background: #fff;
+    margin-top: -3rem;
+    border-radius: 0.3rem;
+    box-shadow: 0 5px 20px #e8e8e8;
+    .z_btnItem{
+        width: 33.33%;
+        height: 50%;
+        display: block;
+        text-align: center;
+        padding-top: 0.4rem;
+        font-size: 0.26rem;
+        float: left;
+        &:nth-child(4){
+            padding-top: 0.2rem;
+        }
+        &:nth-child(5){
+            padding-top: 0.2rem;
+        }
+        &:nth-child(6){
+            padding-top: 0.2rem;
+        }
+        p{
+            margin-top: 0.1rem;
+        }
+        img{
+            width: 0.94rem;
+            height: 0.94rem;
+        }
+    }
+}
+.z_messageItem{
+    height: 1.6rem;
+    width: 100%;
+    padding: 0 0.3rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    .z_messageImg{
+        width: 0.9rem;
+        height: 0.9rem;
+        line-height: 1.6rem;
+        text-align: center;
+        margin-right: 0.16rem;
+        position: relative;
+        .z_vip{
+            width: 0.4rem;
+            height: 0.4rem;
+            left: -0.1rem;
+            top: -0.12rem;
+            position: absolute;
+        }
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .z_messageDes{
+        flex: 1;
+        .z_messageTitle{
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            p{
+                span{
+                    color: @color;
+                    margin-left: 0.2rem;
+                }
+            }
+        }
+    }
+    &:before{
+        content: " ";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        height: 1px;
+        border-bottom: 1px solid @border_color;
+        color: @border_color;
+        -webkit-transform-origin: 0 0;
+        transform-origin: 0 0;
+        -webkit-transform: scaleY(0.5);
+        transform: scaleY(0.5);
+        left: 0.3rem;
+        z-index: 2;
+    }
+}
+/* E 消息中心 */
+/* S 系统通知选项卡 */
+/*顶部tab*/
+.l_index_tab{
+    height: 1.16rem;
+    padding-top: 0.28rem;
+    .swiper-slide{
+        width: auto;
+    }
+    li{
+        display: inline-block;
+        height: 0.6rem;
+        line-height: 0.6rem;
+        margin: 0 0.2rem;
+        .border-radius(0.3rem);
+        a{
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .on{
+        .box_shadow(0px 0px 0.2rem rgba(252,21,43,0.14));
+        background: @color;
+        padding: 0 0.4rem;
+        a{
+            color: #fff;
+        }
+    }
+    .on1{
+        opacity: 0.8;
+    }
+    .on2{
+        opacity: 0.6
+    }
+}
+/* E 系统通知选项卡 */
+
+.zIndex1{z-index:1;}

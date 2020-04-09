@@ -1,0 +1,657 @@
+@import "base.less"; //text-color
+
+.c_main,
+.c_red {
+  color: @color !important;
+}
+
+.c_oil{
+  color: @oil_color !important;
+}
+
+.c_green {
+  color: #56b430 !important;
+}
+
+.c_blue {
+  color: #12adff;
+}
+//深蓝
+
+.c_dark_blue {
+  color: #469bf5;
+}
+
+.c_orange {
+  color: @color_or;
+}
+
+.c_fff,
+.c_white {
+  color: #fff !important;
+}
+
+.c_yellow {
+  color: #fece0e!important;
+}
+
+.c_333 {
+  color: #333 !important;
+}
+
+.c_555 {
+  color: #555 !important;
+}
+
+.c_666 {
+  color: #666 !important;
+}
+
+.c_888 {
+  color: #888 !important;
+}
+
+.c_999 {
+  color: #999 !important;
+}
+.c_c9{
+    color: #c9c9c9 !important;
+}
+//bg_color
+
+.bg_gray {
+  background-color: @bg_color!important;
+}
+
+.bg_fff {
+  background-color: #fff!important;
+}
+//字体
+@f: 12,14,16,18,20,22,24,26,28,30,32,34,36,38,40,42,44,46,48,54,60,70,80,100,110,152;
+
+.f-loop(@n, @i: 1) when (@i =< @n) {
+  @value: extract(@f, @i);
+
+  .f@{value} {
+    font-size: @value/100rem !important;
+  }
+  .f-loop(@n, (@i + 1));
+}
+.f-loop(length(@f));
+
+@pt: 0,8,10,15,18,20,26,30,36,40,46,50,60,89,92,100;
+
+.pt-loop(@n, @i: 1) when (@i =< @n) {
+  @value: extract(@pt, @i);
+
+  .pt@{value} {
+    padding-top: @value/100rem !important;
+  }
+  .pt-loop(@n, (@i + 1));
+}
+.pt-loop(length(@pt));
+@pl: 0,1,10,20,24,28,30,50,130;
+
+.pl-loop(@n, @i: 1) when (@i =< @n) {
+  @value: extract(@pl, @i);
+
+  .pl@{value} {
+    padding-left: @value/100rem !important;
+  }
+  .pl-loop(@n, (@i + 1));
+}
+.pl-loop(length(@pl));
+
+@pr: 20,24,30,40,50,60,90;
+
+.pr-loop(@n, @i: 1) when (@i =< @n) {
+  @value: extract(@pr, @i);
+
+  .pr@{value} {
+    padding-right: @value/100rem !important;
+  }
+  .pr-loop(@n, (@i + 1));
+}
+.pr-loop(length(@pr));
+
+@pb: 5,15,20,30,40,50,80,98,110,121,300;
+
+.pb-loop(@n, @i: 1) when (@i =< @n) {
+  @value: extract(@pb, @i);
+
+  .pb@{value} {
+    padding-bottom: @value/100rem !important;
+  }
+  .pb-loop(@n, (@i + 1));
+}
+.pb-loop(length(@pb));
+@plr: 0,10,14,20,24,25,30,34,44,50,70,80;
+
+.plr-loop(@n, @i: 1) when (@i =< @n) {
+  @value: extract(@plr, @i);
+
+  .plr@{value} {
+    padding-left: @value/100rem !important;
+    padding-right: @value/100rem !important;
+  }
+  .plr-loop(@n, (@i + 1));
+}
+.plr-loop(length(@plr));
+@ptb: 5,10,15,18,20,22,25,26,30,34,37,40,45;
+
+.ptb-loop(@n, @i: 1) when (@i =< @n) {
+  @value: extract(@ptb, @i);
+
+  .ptb@{value} {
+    padding-top: @value/100rem !important;
+    padding-bottom: @value/100rem !important;
+  }
+  .ptb-loop(@n, (@i + 1));
+}
+.ptb-loop(length(@ptb));
+@pad: 20,30;
+
+.pad-loop(@n, @i: 1) when (@i =< @n) {
+  @value: extract(@pad, @i);
+
+  .pad@{value} {
+    padding: @value/100rem !important;
+  }
+  .pad-loop(@n, (@i + 1));
+}
+.pad-loop(length(@pad)); /*margin*/
+
+.m0 {
+  margin: 0;
+}
+
+@mt: -12,-20,0,4,5,6,8,10,12,15,16,18,20,24,25,28,30,34,35,40,44,45,50,60,70,82,100;
+
+.mt-loop(@n, @i: 1) when (@i =< @n) {
+  @value: extract(@mt, @i);
+
+  .mt@{value} {
+    margin-top: @value/100rem !important;
+  }
+  .mt-loop(@n, (@i + 1));
+}
+.mt-loop(length(@mt));
+@mr: 0,5,8,10,14,15,16,20,26,30,40;
+
+.mr-loop(@n, @i: 1) when (@i =< @n) {
+  @value: extract(@mr, @i);
+
+  .mr@{value} {
+    margin-right: @value/100rem !important;
+  }
+  .mr-loop(@n, (@i + 1));
+}
+.mr-loop(length(@mr));
+
+@mb: 5,10,15,18,20,22,24,26,30,40,48,50,60,80,84,116;
+
+.mb-loop(@n, @i: 1) when (@i =< @n) {
+  @value: extract(@mb, @i);
+
+  .mb@{value} {
+    margin-bottom: @value/100rem !important;
+  }
+  .mb-loop(@n, (@i + 1));
+}
+.mb-loop(length(@mb));
+@ml: 4,5,6,10,15,16,20,30,40,50;
+
+.ml-loop(@n, @i: 1) when (@i =< @n) {
+  @value: extract(@ml, @i);
+
+  .ml@{value} {
+    margin-left: @value/100rem !important;
+  }
+  .ml-loop(@n, (@i + 1));
+}
+.ml-loop(length(@ml));
+
+@mtb: 10,15,20,30,40,50,60;
+
+.mtb-loop(@n, @i: 1) when (@i =< @n) {
+  @value: extract(@mtb, @i);
+
+  .mtb@{value} {
+    margin-top: @value/100rem !important;
+    margin-bottom: @value/100rem !important;
+  }
+  .mtb-loop(@n, (@i + 1));
+}
+.mtb-loop(length(@mtb));
+@mlr: 10,12,15,20,30;
+
+.mlr-loop(@n, @i: 1) when (@i =< @n) {
+  @value: extract(@mlr, @i);
+
+  .mlr@{value} {
+    margin-left: @value/100rem !important;
+    margin-right: @value/100rem !important;
+  }
+  .mlr-loop(@n, (@i + 1));
+}
+.mlr-loop(length(@mlr));
+
+.top0 {
+  top: 0 !important;
+}
+
+.hide {
+  display: none;
+}
+//input placeholder
+input::-webkit-input-placeholder{
+    color:#888;
+}
+input::-moz-placeholder{   /* Mozilla Firefox 19+ */
+    color:#888;
+}
+input:-moz-placeholder{    /* Mozilla Firefox 4 to 18 */
+    color:#888;
+}
+input:-ms-input-placeholder{  /* Internet Explorer 10-11 */
+    color:#888;
+}
+
+textarea{
+    font-family: inherit;
+}
+//行号
+.lin_hei40{
+    line-height: 0.4rem;
+}
+//通用按钮样式
+//固定底部的按钮 给上一个dom元素加pb121 类
+.btn_wrap{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    padding: .2rem 0;
+    background: #fff;
+    .border-t(@line_color);
+}
+.btn {
+  display: inline-block;
+  .pos_rel;
+  margin-bottom: 0;
+  padding: 0.1rem 0.3rem;
+  vertical-align: top;
+  border: none;
+  border-radius: 0.4rem;
+  .gradient_v(#fd6954,@color);
+  font-size: 0.3rem;
+  .text_center;
+  white-space: nowrap;
+  line-height: 1.5em;
+  color: #fff;
+}
+
+.btn_border {
+  display: inline-block;
+  .pos_rel;
+  margin-bottom: 0;
+  padding: 0.1rem 0.3rem;
+  vertical-align: top;
+  .border(@color);
+  border-radius: 0.4rem;
+  background-color: #fff;
+  font-size: 0.3rem;
+  .text_center;
+  white-space: nowrap;
+  line-height: 1.5em;
+  color: @color;
+}
+
+.gray_border {
+  //空灰色按钮
+  .border(#dbdbdb);
+  .c_666;
+}
+/*块按钮*/
+
+.btn_block {
+  display: block;
+  width: 6.14rem;
+  margin: 0 auto;
+  .text_center;
+  color: #fff;
+  .gradient_v(#fd6954,@color);
+  height: 0.8rem;
+  border-radius: 0.4rem;
+  line-height: 0.8rem;
+  font-size: 0.3rem;
+}
+
+.mini {
+  width: 2.75rem;
+}
+.pink_btn {
+  //粉色按钮
+  .gradient_v(#f8a59a,#ff7d7d);
+}
+.gray_btn {
+  //灰色按钮
+  .gradient_v(#d3d3d3,#d0d0d0);
+}
+.middle {
+  vertical-align: middle !important;
+}
+
+.vertical_top {
+  vertical-align: top;
+}
+//列表右侧箭头
+.navigate_right{
+    position: relative;
+}
+.navigate_right::after {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  right: 0.20rem;
+  margin-top: -0.14rem;
+  font-family: "iconfont";
+  font-size: 0.3rem;
+  line-height: 1;
+  text-decoration: none;
+  content: "\e621";
+  color: #aaaaaa;
+}
+
+.with_a {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+//宽线条
+
+.line {
+  position: relative;
+  margin-bottom: 0.2rem;
+
+  &::after {
+    display: block;
+    position: absolute;
+    bottom: -.2rem;
+    left: 0;
+    width: 100%;
+    height: 0.2rem;
+    line-height: 1;
+    text-decoration: none;
+    content: "";
+    background-color: #f5f5f5;
+  }
+}
+
+.line_box {
+  height: 0.2rem;
+  background-color: #f5f5f5;
+}
+//框架部分---有底部导航的时候用
+
+.main_con {
+  min-height: 100%;
+  height: 100%;
+  .overflow_auto;
+}
+
+.pb96 {
+  padding-bottom: 0.96rem;
+}
+//加载错误背景图片
+
+//img {
+//position: relative;
+//overflow: hidden;
+//}
+
+//img:after {
+//  content: '';
+//  background: url("../images/loading.png") no-repeat center;
+//  background-size: contain;
+//  display: block;
+//  position: absolute;
+//  // 底下幾行是故意要滿版並且背景填滿擋住底下那個很醜的加載失敗圖片(包子)
+//  z-index: -1;
+//  top: 0;
+//  left: 0;
+//  bottom: 0;
+//  right: 0;
+//  overflow: hidden;
+//  background-color: #f5f5f5;
+//  border: 1px solid #eee;
+//}
+//顶部标题栏
+
+.title {
+  height: 0.89rem;
+  .border-b(#dbdbdb);
+  position: relative;
+  background: #fff;
+  line-height: 0.88rem;
+}
+
+.tit_font {
+  padding: 0 0.8rem;
+  .text_center;
+  line-height: 0.88rem;
+  color: #333;
+  .f34;
+}
+
+.tit_font_es {
+  .ellipsis;
+}
+
+.tit_icon {
+  display: flex;
+  position: absolute;
+  top: 0;
+  height: 0.88rem;
+  padding: 0 0.24rem 0 0.18rem;
+  .f28;
+  color: #333;
+  .text_center;
+  font-size: 0.34rem;
+  color: #333;
+
+  span {
+    .f28;
+  }
+
+  i {
+    color: #808080;
+    font-size: 0.4rem;
+    line-height: 0.88rem;
+  }
+}
+
+.title_circle {
+  position: relative;
+  top: -0.05rem;
+  color: #7f7f7f;
+  .f20;
+}
+
+.tit_icon.right {
+  right: 0;
+}
+
+.tit_icon.left {
+  left: 0;
+}
+
+.c_add_red .right i {
+  .c_red;
+}
+
+.main-body {
+  .plr30;
+}
+
+.layer_text_center {
+  width: 100%;
+  .text_center;
+  .wordbreak;
+}
+
+.wordbreak {
+  word-break: keep-all;
+  word-wrap: break-word;
+}
+
+.hei20 {
+  height: 0.2rem;
+}
+/*S 列表 筛选条件*/
+
+.filtrate_list_tab {
+  height: 0.81rem;
+  .border-b;
+  .flex;
+  .flex_center;
+  .justify_around;
+
+  li {
+    position: relative;
+    .flex;
+    .flex_center;
+    .f28;
+    .c_666;
+    cursor: pointer;
+
+    i {
+      display: inline-block;
+      .transition(all 0.2s);
+    }
+    &.hot{
+      .c_main;
+      &:after {
+        display: block;
+        content: '';
+        position: absolute;
+        left: 5%;
+        bottom: -0.22rem;
+        width: 90%;
+        height: 0.03rem;
+        background: @color;
+      }
+    }
+    &.on {
+      .c_main;
+
+      &:after {
+        display: block;
+        content: '';
+        position: absolute;
+        left: 5%;
+        bottom: -0.22rem;
+        width: 90%;
+        height: 0.03rem;
+        background: @color;
+      }
+
+      i {
+        .rotate(180deg);
+      }
+    }
+  }
+}
+/*E 列表 筛选条件*/
+
+.border_b{
+    .border-b;
+}
+.border_t{
+    .border-t;
+}
+
+/*S 需求详情 技能详情title*/
+.c_detail_title{
+    .text_center;
+    .c_666;
+    .f26;
+    img{
+        width:0.74rem;
+    }
+    .c_rotate_title{
+      .rotate(180deg);
+    }
+}
+/*E 需求详情 技能详情title*/
+
+// 全屏黑色背景
+.screen{
+    width: 7.5rem;
+    position: fixed;
+    left: 50%;
+    margin-left: -3.75rem;
+    top: 0;
+    bottom: 0;
+}
+.screen_black{
+    .screen;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+
+// 箭头向上的气泡框
+
+.bubble_box{
+    width: 6.9rem;
+    border: 1px solid @border_color;
+    padding: .3rem .1rem;
+    background-color: #FFF;
+    position: relative;
+    &::before {
+        content: '';
+        display: block;
+        border-width: .15rem;
+        position: absolute;
+        top: -.3rem;
+        left: 50%;
+        margin-left: -.15rem;
+        border-style: dashed dashed solid dashed;
+        border-color: transparent transparent @border_color transparent;
+        font-size: 0;
+        line-height: 0;
+    }
+    &::after {
+        content: '';
+        display: block;
+        border-width: .15rem;
+        position: absolute;
+        top: -.28rem;
+        left: 50%;
+        margin-left: -.15rem;
+        border-style: dashed dashed solid dashed;
+        border-color: transparent transparent #fff transparent;
+        font-size: 0;
+        line-height: 0;
+    }
+}
+
+/*S底部固定按钮*/
+.c_fixed_bottom{
+    position:fixed;
+    width:100%;
+    height: 1.14rem;
+    background: #fff;
+    left:0;
+    bottom: 0;
+    z-index:2;
+    .btn_block{
+        margin:0.18rem auto;
+    }
+}
+/*E底部固定按钮*/
+
+.mint-indicator-wrapper{
+    z-index: 5000;
+}

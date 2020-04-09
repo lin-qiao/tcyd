@@ -1,0 +1,257 @@
+/*box sizing*/
+/*圆角*/
+/*渐变*/
+/*
+ * 阴影
+ * @shadow: inset 0 1px 0 rgba(255,255,255,.1), 0 1px 0 rgba(255,255,255,.1);
+  .box-shadow(@shadow);
+ */
+/*Placeholder text
+ *input{
+ *     .placeholder(red)
+ * }
+ * */
+/*S base*/
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+}
+html {
+  width: 100%;
+  overflow-x: hidden;
+  height: 100%;
+}
+body {
+  position: relative;
+  width: 7.5rem;
+  margin: 0 auto;
+  font-size: 0.24rem;
+  color: #333;
+  font-family: Arial, Microsoft YaHei, Helvetica, sans-serif;
+  background: #fff;
+  min-height: 100%;
+}
+input,
+textarea,
+select {
+  -webkit-appearance: none;
+  border: none;
+  border-radius: 0;
+}
+img {
+  border: 0 none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+  line-height: 1.2;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+h1 {
+  font-size: 0.36rem !important;
+}
+h2 {
+  font-size: 0.3rem !important;
+}
+h3 {
+  font-size: 0.24rem;
+}
+h4 {
+  font-size: 0.22rem !important;
+}
+h5 {
+  font-size: 0.2rem !important;
+}
+h6 {
+  font-size: 0.18rem !important;
+}
+button {
+  border: 0;
+  background-color: transparent;
+  padding: 0;
+}
+.pos_rel {
+  position: relative !important;
+}
+.ellipsis {
+  display: -webkit-box;
+  overflow: hidden;
+  white-space: normal !important;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  word-break: break-all;
+  -webkit-line-clamp: 1;
+  /*! autoprefixer: off */
+  -webkit-box-orient: vertical;
+  /* autoprefixer: on */
+}
+.ellipsis_clip {
+  display: -webkit-box;
+  overflow: hidden;
+  white-space: normal !important;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  -webkit-line-clamp: 2;
+  /*! autoprefixer: off */
+  -webkit-box-orient: vertical;
+  /* autoprefixer: on */
+}
+.ellipsis_clip3 {
+  display: -webkit-box;
+  overflow: hidden;
+  white-space: normal !important;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  -webkit-line-clamp: 3;
+  /*! autoprefixer: off */
+  -webkit-box-orient: vertical;
+  /* autoprefixer: on */
+}
+.text_left {
+  text-align: left !important;
+}
+.text_center {
+  text-align: center !important;
+}
+.text_right {
+  text-align: right !important;
+}
+.text_through {
+  text-decoration: line-through !important;
+}
+.text_underline {
+  text-decoration: underline !important;
+}
+.pull_left {
+  float: left;
+}
+.pull_right {
+  float: right;
+}
+.clearfix::after,
+.clearfix::before {
+  content: " ";
+  display: table;
+}
+.clearfix::after {
+  clear: both;
+}
+a {
+  color: #333;
+  text-decoration: none;
+}
+ul,
+ol,
+dl {
+  list-style: none !important;
+  padding: 0;
+  margin: 0;
+}
+em,
+i {
+  font-style: normal;
+}
+b {
+  font-weight: normal;
+}
+p,
+dd {
+  margin: 0;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+input,
+select {
+  background: none;
+}
+.border-n {
+  border: none !important;
+}
+input[type="search"]::-webkit-search-cancel-button {
+  display: none;
+}
+/*flex布局*/
+.flex {
+  display: flex;
+  display: -webkit-flex;
+}
+.flex_wrap {
+  flex-wrap: wrap;
+}
+.inline_flex {
+  display: inline-flex;
+}
+.flex_center {
+  align-items: center;
+  -webkit-align-items: center;
+}
+.justify_between {
+  justify-content: space-between;
+  -webkit-justify-content: space-between;
+}
+.justify_around {
+  justify-content: space-around;
+  -webkit-justify-content: space-around;
+}
+.justify_end {
+  justify-content: flex-end;
+  -webkit-justify-content: flex-end;
+}
+.justify_center {
+  justify-content: center;
+  -webkit-justify-content: center;
+}
+.flex_grow {
+  flex-grow: 1;
+}
+.flex1 {
+  flex: 1;
+}
+.flex_row {
+  flex-direction: row;
+}
+.flex_column {
+  flex-direction: column;
+}
+.overflow_scroll {
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+.overflow_auto {
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.router_page {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  width: 7.5rem;
+  margin-left: -3.75rem;
+  right: 0;
+  bottom: 0;
+  z-index: 30;
+  background: #fff;
+  overflow-x: hidden;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.box_screen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 111;
+}
